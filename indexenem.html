@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IF-ENEM · Plataforma de Estudos</title>
+<script>try{document.documentElement.dataset.tema=localStorage.getItem("ifenem_tema")||(matchMedia("(prefers-color-scheme: dark)").matches?"escuro":"claro")}catch(e){document.documentElement.dataset.tema="claro"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/tema.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#/" id="brand">IF-<span>ENEM</span></a>
+  <nav class="menu" id="menu"></nav>
+  <div class="user-chip" id="user-chip"></div>
+  <button class="tema-btn" id="tema-btn" onclick="alternaTema()" aria-label="Alternar entre modo claro e escuro" title="Modo claro ou escuro"></button>
+  <div class="logos">
+    <a class="logo-link info" href="https://www.instagram.com/info_2025.1/" target="_blank" rel="noopener" title="Info 2025.1 no Instagram"><img src="img/logo-info.jpg" alt="Info 2025.1" data-f="INFO" onerror="this.replaceWith(Object.assign(document.createElement('b'),{className:'logo-txt',textContent:this.dataset.f}))"></a>
+    <a class="logo-link" href="https://www.ifpb.edu.br/" target="_blank" rel="noopener" title="Site do IFPB"><img src="https://www.ifpb.edu.br/static/media/logo.20d47050.png" alt="IFPB" data-f="IFPB" onerror="this.replaceWith(Object.assign(document.createElement('b'),{className:'logo-txt',textContent:this.dataset.f}))"></a>
+  </div>
+</div></header>
+<main><div class="wrap" id="app"></div></main>
+<footer class="rodape"><div class="wrap">
+  <div class="rodape-grid">
+    <div><p class="rodape-nome">IF-ENEM</p><p>Plataforma de preparação para o ENEM em Matemática, feita para os estudantes do Instituto Federal da Paraíba.</p></div>
+    <div><b>Navegue</b><a href="#/home">Início</a><a href="#/simulados">Simulados</a><a href="#/videos">Vídeo-aulas</a><a href="#/desempenho">Perfil</a></div>
+    <div><b>Links</b><a href="https://www.ifpb.edu.br/" target="_blank" rel="noopener">IFPB</a><a href="https://www.instagram.com/info_2025.1/" target="_blank" rel="noopener">Info 2025.1</a><a href="https://portaldaobmep.impa.br/" target="_blank" rel="noopener">Portal da OBMEP</a></div>
+  </div>
+  <p class="rodape-dir">&copy; 2026 IF-ENEM. Todos os direitos reservados a <b>Anderson Carneiro de Oliveira Araújo, Ismael de Sena Moreira, Lucas Henrique de Costa Francelino e David Harley Sarinho</b>.</p>
+</div></footer>
+<div id="toast"></div>
+
+<script src="js/app.js"></script>
+<script src="js/config-admin.js"></script>
+<script src="js/banco-dados.js"></script>
+<script src="js/tema.js"></script>
+</body>
+</html>
